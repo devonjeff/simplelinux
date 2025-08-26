@@ -11,10 +11,10 @@ source config.mk
 # --- Download Sources ---
 echo "--- Downloading Sources ---"
 mkdir -p sources
-wget --quiet --continue --directory-prefix=sources ${LINUX_URL}
-wget --quiet --continue --directory-prefix=sources ${BINUTILS_URL}
-wget --quiet --continue --directory-prefix=sources ${GCC_URL}
-wget --quiet --continue --directory-prefix=sources ${GLIBC_URL}
+wget --continue --directory-prefix=sources ${LINUX_URL}
+wget --continue --directory-prefix=sources ${BINUTILS_URL}
+wget --continue --directory-prefix=sources ${GCC_URL}
+wget --continue --directory-prefix=sources ${GLIBC_URL}
 echo "--- Downloads Complete ---"
 
 echo "--- Building Toolchain (Pass 1) ---"
