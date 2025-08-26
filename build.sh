@@ -21,7 +21,8 @@ echo "--- Building Toolchain (Pass 1) ---"
 
 # Create build and tools directories
 mkdir -p build/binutils-pass1
-mkdir -p ${TARGET_PREFIX}
+sudo mkdir -p ${TARGET_PREFIX}
+sudo chown -v $(whoami) ${TARGET_PREFIX}
 
 # --- Binutils (Pass 1) ---
 echo "--- Building Binutils (Pass 1) ---"
