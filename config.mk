@@ -13,9 +13,9 @@ GLIBC_VERSION=2.42
 
 # Download URLs
 LINUX_URL="https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-${LINUX_VERSION}.tar.xz"
-BINUTILS_URL="https://ftp.gnu.org/gnu/binutils/binutils-${BINUTILS_VERSION}.tar.xz"
-GCC_URL="https://ftp.gnu.org/gnu/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.xz"
-GLIBC_URL="https://ftp.gnu.org/gnu/glibc/glibc-${GLIBC_VERSION}.tar.xz"
+BINUTILS_URL="https://ftpmirror.gnu.org/binutils/binutils-${BINUTILS_VERSION}.tar.xz"
+GCC_URL="https://ftpmirror.gnu.org/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.xz"
+GLIBC_URL="https://ftpmirror.gnu.org/glibc/glibc-${GLIBC_VERSION}.tar.xz"
 
 # Source tarballs
 LINUX_TAR="linux-${LINUX_VERSION}.tar.xz"
