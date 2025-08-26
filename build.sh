@@ -60,7 +60,7 @@ echo "--- Building Glibc ---"
 mkdir -p build/glibc-build
 cd build/glibc-build
 tar -xf ../../sources/${GLIBC_TAR}
-../glibc-${GLIBC_VERSION}/configure --prefix=${PREFIX} --host=${TARGET} --build=$(../glibc-${GLIBC_VERSION}/scripts/config.guess) --enable-kernel=4.14 --with-headers=${TARGET_PREFIX}/include libc_cv_forced_unwind=yes
+glibc-${GLIBC_VERSION}/configure --prefix=${PREFIX} --host=${TARGET} --build=$(glibc-${GLIBC_VERSION}/scripts/config.guess) --enable-kernel=4.14 --with-headers=${TARGET_PREFIX}/include libc_cv_forced_unwind=yes
 make -j$(nproc)
 make install DESTDIR=${TARGET_PREFIX}
 cd ../..
