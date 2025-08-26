@@ -39,7 +39,7 @@ export PATH=${TARGET_PREFIX}/bin:$PATH
 tar -xf sources/${GCC_TAR} -C build
 cd build/gcc-${GCC_VERSION}
 ./contrib/download_prerequisites
-./configure --prefix=${TARGET_PREFIX} --target=${TARGET} --disable-nls --enable-languages=c,c++ --without-headers --disable-shared
+./configure --prefix=${TARGET_PREFIX} --target=${TARGET} --disable-nls --enable-languages=c,c++ --without-headers --disable-shared --disable-multilib --disable-libstdcxx
 make -j$(nproc) all-gcc
 make install-gcc
 cd ../..
